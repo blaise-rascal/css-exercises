@@ -59,7 +59,11 @@ body {
   font-weight: 600;
 }
 
-.show{
+.popup-modal.show{
   opacity: 100%;
-	
+}
+
+.button-container.show {
+  background-color: black;
+  opacity: 40%;
 }
