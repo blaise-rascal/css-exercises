@@ -42,11 +42,12 @@ li {
   
 }.dropdown-menu:hover ul {
 	#display: block;
-	
+	cursor: pointer;
   max-height:300%;
 }
 
 .dropdown-menu:hover button {
+	cursor: pointer;
 	background-color: rgb(80, 210, 227);
 	
 }
