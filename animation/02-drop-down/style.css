@@ -14,7 +14,7 @@
 
 .dropdown-menu {
   position: relative;
-  border: 2px solid red;
+  #border: 2px solid red;
 }
 
 button {
@@ -30,18 +30,20 @@ ul {
   background-color: rgb(189, 188, 188);
   width: 160px;
   list-style: none;
-  display: none;
+  #display: none;
   text-align: center;
-  transition: display 1s;
+  max-height: 0%;
+  transition: max-height 0.3s;
+  overflow:hidden; /* important part */
 }
 
 li {
   padding: 16px;
   
-}
-
-.dropdown-menu:hover ul {
-	display: block;
+}.dropdown-menu:hover ul {
+	#display: block;
+	
+  max-height:300%;
 }
 
 .dropdown-menu:hover button {
@@ -53,3 +55,10 @@ li {
 #	background-color: rgb(90, 220, 237);
  # border: 2px solid red;
 }
+
+ul li:hover{
+	background-color: rgb(210,210,210);
+}
+
+
+
