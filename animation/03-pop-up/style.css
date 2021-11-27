@@ -30,6 +30,12 @@ body {
   border-radius: 5px;
   font-weight: 600;
 }
+#trigger-modal:hover,
+#close-modal:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 1px black;
+	
+}
 
 .popup-modal {
   width: 30%;
@@ -51,4 +57,9 @@ body {
   border: none;
   border-radius: 5px;
   font-weight: 600;
+}
+
+.show{
+  opacity: 100%;
+	
 }
