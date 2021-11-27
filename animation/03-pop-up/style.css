@@ -12,6 +12,7 @@ body {
   height: 100vh;
   background-color: #ffffff;
   opacity: 100%;
+  transition: opacity 0.5s, background-color 0.5s;
 }
 
 #trigger-modal,
@@ -31,7 +32,7 @@ body {
   font-weight: 600;
 }
 #trigger-modal:hover,
-#close-modal:hover{
+.show #close-modal:hover{
   cursor: pointer;
   box-shadow: 1px 1px 1px black;
 	
@@ -48,6 +49,7 @@ body {
   align-items: center;
   margin-top: 10%;
   opacity: 0;
+  transition: opacity 0.5s, margin-top 0.5s;
 }
 
 #close-modal {
@@ -61,6 +63,7 @@ body {
 
 .popup-modal.show{
   opacity: 100%;
+  margin-top: 0%;
 }
 
 .button-container.show {
